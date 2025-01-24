@@ -22,10 +22,8 @@ if (isAdmin) {
   console.log("Access restricted. Admin only.");
 }
 
-const express = require('express');
 require('dotenv').config();
 
-const app = express();
 
 app.get('/', (req, res) => {
   if (process.env.IS_ADMIN === 'true') {
